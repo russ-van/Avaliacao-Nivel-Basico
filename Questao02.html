@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 02</title>
+</head>
+
+<body>
+
+    <h1>Questão 02</h1>
+    <p>Crie um programa que, com base na idade, determine se uma pessoa é criança, adolescente, adulta ou idosa.</p>
+    <a href="index.html">
+        <button>🏠 Página inicial</button>
+    </a>
+    <hr style="background-color: rgb(179, 179, 179); height: 2px;"> <br>
+
+    <h3>Base para Classificação:</h3>
+    <ul>
+        <li>Criança - Menor de 12 anos</li>
+        <li>Adolescente - Menor de 18 anos e maior de 12 anos</li>
+        <li>Adulto - Menor de 60 anos e maior de 18 anos</li>
+        <li>Idoso - Maior de 60 anos</li>
+        
+    </ul><br>
+    <hr style="background-color: rgb(179, 179, 179); height: 2px;"> <br>
+
+    <form onsubmit="verificarIdade(); return false;">
+        <label for="idade">Digite a idade:</label>
+        <input type="number" id="idade" step="1" min="1" max="110" placeholder="Idade" required>
+
+        <input type="submit" value="Classificar faixa etária">
+
+    </form>
+    <h3>Classificação da faixa etária: </h3><span id="resultado"></span>
+
+    <script src="JS/Questao02.js"></script>
+
+</body>
+
+</html>

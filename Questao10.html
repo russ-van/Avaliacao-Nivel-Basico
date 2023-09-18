@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 10</title>
+</head>
+
+<body>
+
+    <h1>Questão 10</h1>
+    <p>Escreva um algoritmo que determine o maior e o menor número de uma lista fornecida pelo usuário.</p>
+    <a href="index.html">
+        <button>🏠 Página inicial</button>
+    </a>
+    <hr style="background-color: rgb(179, 179, 179); height: 2px;"> <br>
+
+    <form onsubmit="verificarValor(); return false">
+        <label for="numero">Digite um número:</label>
+        <input type="number" id="numero" required>
+        <input type="submit" value="Incluir ➕">
+        <span id="refazer"></span>
+    
+    </form>
+
+    <h3>Resultado: <br><br><span id="resultado" style="font-size: 125%;"></span></h3> <br>
+    <h3 style="font-size: 160%; color: rgb(0, 116, 96); margin: 2vh;">Lista:<br><span id="lista"></span></h3>
+
+    <script src="JS/Questao10.js"></script>
+  
+</body>
+</html>

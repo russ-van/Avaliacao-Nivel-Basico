@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 03</title>
+</head>
+
+<body>
+
+    <h1>Questão 03</h1>
+    <p>Faça um programa que pergunte a quantidade de horas trabalhadas por um funcionário e seu valor por hora.
+        Calcule e mostre o salário desse funcionário.</p>
+    <a href="index.html">
+        <button>🏠 Página inicial</button>
+    </a>
+    <hr style="background-color: rgb(179, 179, 179); height: 2px;"> <br>
+
+    <form onsubmit="calcularSalario(); return false;">
+        <label for="horas">Digite as horas trabalhadas:</label>
+        <input type="number" id="horas" step="1" min="0" step="0.01" placeholder="Horas" required> <br><br>
+
+        <label for="valor">Digite o valor por hora:</label>
+        <input type="number" id="valor" min="1" step="0.01" placeholder="R$" required> <br><br>
+
+        <input type="submit" value="Calcular Salário">
+    </form>
+
+    <h3>Holerite:   <span  style="color: rgb(8, 119, 8);" id="resultado"></span> </h3>
+
+    <script src="JS/Questao03.js"></script>
+
+
+
+</body>
+
+</html>

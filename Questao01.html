@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 01</title>
+</head>
+
+<body>
+
+    <h1>Questão 01</h1>
+    <p>Solicite ao usuário seu peso e altura e calcule o Índice de Massa Corporal (IMC).</p>
+    <a href="index.html">
+        <button>🏠 Página inicial</button>
+    </a>
+    <hr style="background-color: rgb(179, 179, 179); height: 2px;"> <br>
+
+    <h3>IMC Classificação</h3>
+    <ul>
+        <li>Menor que 18,5 - Magreza</li>
+        <li>18,5 a 24,9 - Normal</li>
+        <li>25 a 29,9 - Sobrepeso</li>
+        <li>30 a 34,9 - Obesidade grau I</li>
+        <li>35 a 39,9 - Obesidade grau II</li>
+        <li>Maior que 40 - Obesidade grau III</li>
+    </ul><br>
+    <hr style="background-color: rgb(179, 179, 179); height: 2px;"> <br>
+
+    <form onsubmit="calcularImc(); return false;">
+        <label for="peso">Digite o peso:</label>
+        <input type="number" name="peso" id="peso" min="5" max="300" step="1" placeholder="Peso" required> <br><br>
+
+        <label for="altura">Digite a altura:</label>
+        <input type="number" name="altura" id="altura" min="0.30" max="2.70" step="0.01" placeholder="Altura" required><br><br>
+
+        <input type="submit" value="Calcular IMC">
+    </form><br><br>
+
+    <h3>Índice de Massa Corporal (IMC):</h3>
+    <h3 id="resultado"></h3>
+
+    <script src="JS/Questao01.js"></script>
+
+
+</body>
+
+</html>

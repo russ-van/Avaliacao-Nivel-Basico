@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 09</title>
+</head>
+
+<body>
+
+    <h1>Questão 09</h1>
+    <p>Crie um programa que solicite números ao usuário até que a soma dos números inseridos seja maior que 100.</p>
+    <a href="index.html">
+        <button>🏠 Página inicial</button>
+    </a>
+    <hr style="background-color: rgb(179, 179, 179); height: 2px;"> <br>
+
+    <form onsubmit="somarAte100();return false" >
+        <label for="numero">Digite um número:</label>
+        <input type="number" id="numero" min="1" max="100" placeholder="Ex.: 50" required>
+        <input type="submit" id="numeroBotao" value="Somar">
+        <span id="refazer"></span>    
+    </form>
+
+    <h3>Resultado: <br>
+        <span style="color: rgb(107, 151, 2); font-size: 160%; margin: 2vh;" id="exibirSoma"></span><br>
+        <span style="color: rgb(3, 102, 109); font-size: 160%; margin: 2vh;" id="atingido"></span>
+    </h3>
+
+    <script src="JS/Questao09.js"></script>
+
+</body>
+
+</html>
